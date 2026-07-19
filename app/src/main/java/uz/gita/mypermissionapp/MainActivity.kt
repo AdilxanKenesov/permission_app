@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             MyPermissionAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "Hello, world!",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

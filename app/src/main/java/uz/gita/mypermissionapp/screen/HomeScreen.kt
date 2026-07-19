@@ -1,5 +1,9 @@
 package uz.gita.mypermissionapp.screen
 
-class HomeScreen {
+import androidx.compose.runtime.Composable
 
+class HomeScreen {
+    @Composable
+    fun newFun(){}
+// Rustam
 }

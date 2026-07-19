@@ -42,8 +42,10 @@ dependencies {
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
@@ -97,5 +99,7 @@ dependencies {
     implementation("org.orbit-mvi:orbit-compose:12.0.0")
 // Simplifies testing with utilities for verifying state and event flows (multiplatform)
     testImplementation("org.orbit-mvi:orbit-test:12.0.0")
+
+    implementation("androidx.compose.material:material-icons-extended")
 
 }

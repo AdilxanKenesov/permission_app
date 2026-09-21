@@ -42,9 +42,9 @@ dependencies {
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
-    implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
@@ -53,52 +53,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
-
-
-    val voyagerVersion = "1.1.0-beta02"
-
-    // Multiplatform
-
-    // Navigator
-    implementation("cafe.adriel.voyager:voyager-navigator:$voyagerVersion")
-
-    // Screen Model
-    implementation("cafe.adriel.voyager:voyager-screenmodel:$voyagerVersion")
-
-    // BottomSheetNavigator
-    implementation("cafe.adriel.voyager:voyager-bottom-sheet-navigator:$voyagerVersion")
-
-    // TabNavigator
-    implementation("cafe.adriel.voyager:voyager-tab-navigator:$voyagerVersion")
-
-    // Transitions
-    implementation("cafe.adriel.voyager:voyager-transitions:$voyagerVersion")
-
-    // Koin integration
-    implementation("cafe.adriel.voyager:voyager-koin:$voyagerVersion")
-
-    // Android
-
-    // Hilt integration
-    implementation("cafe.adriel.voyager:voyager-hilt:$voyagerVersion")
-
-    // LiveData integration
-    implementation("cafe.adriel.voyager:voyager-livedata:$voyagerVersion")
-
-    // Desktop + Android
-
-    // Kodein integration
-    implementation("cafe.adriel.voyager:voyager-kodein:$voyagerVersion")
-
-
-    // Core of Orbit, providing state management and unidirectional data flow (multiplatform)
-    implementation("org.orbit-mvi:orbit-core:12.0.0")
-// Integrates Orbit with Android and Common ViewModel for lifecycle-aware state handling (Android, iOS, desktop)
-    implementation("org.orbit-mvi:orbit-viewmodel:12.0.0")
-// Enables Orbit support for Jetpack Compose and Compose Multiplatform (Android, iOS, desktop)
-    implementation("org.orbit-mvi:orbit-compose:12.0.0")
-// Simplifies testing with utilities for verifying state and event flows (multiplatform)
-    testImplementation("org.orbit-mvi:orbit-test:12.0.0")
 
     implementation("androidx.compose.material:material-icons-extended")
 

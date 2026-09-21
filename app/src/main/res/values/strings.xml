@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Permission App</string>
+    <string name="permission_read_notes_label">Read notes</string>
+    <string name="permission_read_notes_description">Allows an app to read notes stored in My Permission App.</string>
 </resources>
